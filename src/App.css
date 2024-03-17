@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
+.title {
+    text-align: center;
+    text-transform: capitalize;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-page {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.labels {
+    margin-top: 40px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.labels input {
+    border-radius: 7px;
+    outline: none;
+    padding: 4px;
+    margin-bottom: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.labels button {
+    border: none;
+    outline: none;
+    margin-top: 5px;
+    width: 100px;
+    padding: 6px;
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    text-transform: capitalize;
+    cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.render {
+    position: relative;
+    top: -22px;
+    left: 10px;
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
+.render div {
+    width: 300px;
+    height: 400px;
+    margin-top: 10px;
+    margin-right: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 3s normal 1s;
+}
+
+.render div img {
+    position: relative;
+    left: 30px;
+    top: 10px;
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 3s normal 1s;
+}
+
+.render div h2 {
+    position: relative;
+    left: 60px;
+    font-weight: 700;
+    font-style: oblique;
+}
+
+.render div p {
+    position: relative;
+    left: 70px;
+    font-weight: 500;
+    font-style: initial;
+}
+
+.render div img:hover {
+    width: 220px;
+    height: 220px;
+}
+
+.render div:hover {
+    height: 380px;
 }
